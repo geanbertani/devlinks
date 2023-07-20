@@ -57,7 +57,8 @@ body * {
 
 #switch {
   position: relative;
-  border: 1px solid red;
+  width: 64px;
+  margin: 4px auto;
 }
 
 /* switch */
@@ -67,9 +68,12 @@ body * {
   background: white var(--switch-bg-url) no-repeat center center;
   border: 0;
   border-radius: 50%;
+  /*alinhamento absoluto*/
   position: absolute;
+  top: 50%;
   right: 0;
   z-index: 1;
+  transform: translateY(-50%);
 }
 
 #switch span {
